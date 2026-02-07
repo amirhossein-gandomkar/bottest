@@ -1,23 +1,3 @@
-{
-  "name": "telegram-summary-bot",
-  "version": "1.0.0",
-  "description": "A Telegram bot to summarize text deployed on Vercel",
-  "main": "api/index.js",
-  "scripts": {
-    "start": "node api/index.js"
-  },
-  "dependencies": {
-    "telegraf": "^4.15.0",
-    "@google/generative-ai": "^0.1.3",
-    "axios": "^1.6.0",
-    "mammoth": "^1.6.0",
-    "docx": "^8.5.0"
-  },
-  "engines": {
-    "node": ">=18"
-  }
-}
-
 const { Telegraf, Markup } = require('telegraf');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const axios = require('axios');
